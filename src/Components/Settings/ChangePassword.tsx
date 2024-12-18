@@ -37,7 +37,7 @@ const ChangePassword: Component = () => {
       <form class={styles.formHorizontal}>
         <div class={styles.stnInput}>
           <label for="currentPassword">Current Password</label>
-          <input type="password" id="currentPassword" name="currentPassword" value={currentPassword} disabled />
+          <input type="password" id="currentPassword" name="currentPassword" value={currentPassword()} disabled />
         </div>
         <div class={styles.stnInput}>
           <label for="newPassword">New Password</label>
