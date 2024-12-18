@@ -1,0 +1,21 @@
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust dimensions */
+    width: 50%; /* Full width */
+    overflow: auto; /* Enable scroll */
+    background-color: rgba(85, 85, 85,0.6);
+  
+    border-radius: 5px;
+  }
+  .center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column; 
+  }

@@ -1,0 +1,147 @@
+/* Same CSS as Angular component */
+button.book-cover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .center-div {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .modal {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for modal dimensions */
+    width: 50%;
+    /* Full width */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(85, 85, 85, 0.6);
+  
+    /* Max height to enable scrolling */
+    max-height: 75%;
+    border-radius: 5px;
+  
+    /* Hide scrollbar */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  
+  /* Hide scrollbar */
+  .modal::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+  
+  .modal-content {
+    /* Round */
+    border-radius: 5px;
+  
+    background-color: black;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+  }
+  
+  .volume {
+    margin: 2rem;
+  
+    text-align: center;
+  
+    /* Border */
+    border: 2px solid #2e79eb;
+    border-radius: 5px;
+  
+  }
+  
+  .volume p {
+    margin: 0;
+  }
+  
+  .fancy-button {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: #2e79eb;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  
+    /* Border */
+    border-radius: 5px;
+  }
+  
+  .volume .volume-header {
+    margin-bottom: .2rem;
+    font-size: large;
+    font-weight: bold;
+    color: #2e79eb;
+  }
+  
+  .update-pages {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #2e79eb;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  
+    /* Width */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* Border */
+    border-radius: 5px;
+  }
+  
+  .update-pages button {
+    margin-top: .2rem;
+    background-color: #3a547a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  
+    /* Width */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* Border */
+    border-radius: 5px;
+  }
