@@ -1,5 +1,4 @@
 import { Component, createSignal, Show } from 'solid-js';
-import { Link } from 'solid-app-router';
 import styles from './Toolbar.module.css';
 
 const Toolbar: Component = () => {
@@ -17,19 +16,20 @@ const Toolbar: Component = () => {
         alt="logo"
         width="40"
       />
-
-      <Link href="/" class={styles.link}>
+     <nav>
+      <a href="/" class={styles.link}>
         Bookshelf
-      </Link>
+      </a>
       <div class={styles.spacer}>
-        <Link class={styles.link} href="/profile">
+        <a class={styles.link} href="/profile">
           <span>Profile</span>
-        </Link>
+        </a>
 
-        <Link class={styles.link} href="/library">
+        <a class={styles.link} href="/">
           <span>Library</span>
-        </Link>
+        </a>
       </div>
+      </nav>
       <div class={styles.right}>
       <svg
   version="1.0"
@@ -52,22 +52,22 @@ const Toolbar: Component = () => {
 </svg>
 
         <div class={styles.dropdownContent}>
-          <Link href="/settings" class={styles.link}>
+          <a href="/settings" class={styles.link}>
             Settings
-          </Link>
+          </a>
           <br />
-          <Link href="/help" class={styles.link}>
+          <a href="/help" class={styles.link}>
             Help
-          </Link>
+          </a>
           <br />
           <Show when={!isLoggedIn()}>
-            <Link href="/login" class={styles.link}>
+            <a href="/login" class={styles.link}>
               Login
-            </Link>
+            </a>
             <br />
-            <Link href="/register" class={styles.link}>
+            <a href="/register" class={styles.link}>
               Register
-            </Link>
+            </a>
           </Show>
           <Show when={isLoggedIn()}>
             <button class={`${styles.link} ${styles.logoutBtn}`} onClick={handleLogout}>

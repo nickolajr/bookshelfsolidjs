@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@modular-forms/solid": "^0.25.0",
+    "@solidjs/router": "^0.15.2",
     "solid-app-router": "^0.4.2",
     "solid-js": "^1.9.3"
   }
